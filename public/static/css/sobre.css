@@ -1,0 +1,57 @@
+.bluebed{
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 9rem;
+    min-height: 25vh;
+}
+
+.container-sobre-texto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 5vw;
+    animation-name: FadeRight;
+    animation-duration: 1.25s;
+    width: 42%;
+}
+
+.bluebed iframe{
+    position: absolute;
+    left: 5vw;
+    direction: ltr;
+    animation-name: FadeLeft;
+    animation-duration: 1.25s;
+    width: 42vw; 
+    height: 23.625vw;
+    
+}
+
+.bluebed-titulo{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #494866;
+}
+
+.bluebed-descricao{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    color: #494866;
+}
+
+@keyframes FadeLeft{
+    from {left: -15vw;}
+    to {left: 5vw;}
+}
+
+@keyframes FadeRight{
+    from {right: -15vw;}
+    to {right: 5vw; }
+}
+

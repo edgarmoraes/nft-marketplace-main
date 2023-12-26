@@ -1,0 +1,59 @@
+.populares{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.populares-titulo{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #494866;
+    margin-top: 5rem;
+}
+
+.populares-descricao{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    color: #494866;
+}
+
+.container-artistas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.artistas{
+    margin-top: 2rem;
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/símbolo\ azul-1.png) no-repeat center/contain;
+    transition: 0.5s ease-in-out;
+}
+
+.artistas:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.artistas-descricao{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    color: #f1f1f1;
+}
+
+
+

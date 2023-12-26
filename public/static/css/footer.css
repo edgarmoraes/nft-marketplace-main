@@ -1,0 +1,134 @@
+.rodape{
+    width: 100%;
+    background-color: #323437;
+    display: flex;
+    padding: 0 5% 0 5%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-rodape{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.footer-navbar, .home-footer{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.8);
+    transition: 0.2s ease-in-out;
+}
+
+.footer-navbar:hover, .home-footer:hover{
+    color:rgba(250, 250, 250, 0.6)
+}
+
+.container-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright{
+    margin-bottom: 10px;
+    color: rgba(250, 250, 250, 0.8);
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-img{
+    width: 100px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-img:hover{
+    transform: scale(1.05);
+}
+
+.menu-redes{
+    width: 22%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icone-contatos{
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.8);
+    transition: 0.5s ease-in-out;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icone-contatos:hover{
+    color: rgba(250, 250, 250, 0.6);
+    transform: scale(1.3);
+}
+
+@media screen and (min-width: 0px){
+    .rodape{
+        background-color: #323437;
+        display: flex;
+        padding: 0 5% 0 5%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-rodape{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        height: 200px;
+    }
+
+    .menu-redes{
+        width: 22%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 481px){
+    
+}
+
+@media screen and (min-width: 769px){
+    .rodape{
+        background-color: #323437;
+        display: flex;
+        padding: 0 5% 0 5%;
+        height: 100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-rodape{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        height: 100px;
+    }
+    
+    .menu-redes{
+        width: 22%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+

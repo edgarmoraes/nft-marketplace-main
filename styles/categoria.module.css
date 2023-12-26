@@ -1,0 +1,62 @@
+/* const style= {
+     wrapper: "mb-[2rem] top-[100vh] max-w-[100%]",
+          tituloContainer: "flex content-center justify-center mt-[7rem]",
+          tituloCategoria: "font-inter text-[2.5rem] mb-[1rem] text-[#494866]",
+          slideContainer: "m-[2rem] scroll-smooth snap-x snap-mandatory",
+          slider: "srhink-0 flex gap-6 overflow-x-hidden scroll-smooth snap-x snap-center",
+          buttonContainer: "flex justify-center content-center",
+          buttonRight: "flex justify-center content-center top-1/2 left-1/2 transform translate-x -translate-y",
+          buttonLeft: "flex justify-center content-center top-1/2 left-1/2 transform -translate-x -translate-y rotate-180"
+} */
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.wrapper {
+     margin-bottom: 2rem;
+     top: 100vh;
+     max-width: 100%;
+}
+
+.tituloContainer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 7rem;
+}
+
+.tituloCategoria {
+     font-size: 2.5rem;
+     margin-bottom: 1rem;
+     color: #494866;
+}
+
+.slideContainer {
+     margin: 2rem;
+     scroll-behavior: smooth;
+     width: 1500px;
+     min-width: 1000px;
+     position: relative;
+	left: 8%;
+	top: 50%
+}
+
+
+.slider {
+     display: flex;
+     flex-shrink: 0;
+     gap: 6;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+     width: 1500px;
+     min-width: 1000px;
+     transition: 0.4s ease-in-out;
+}
+.slider :hover {
+     box-shadow: 0 0 11px rgba(33, 33, 33, .2)
+}
+
+
+.imagem {
+     border-radius: 20%;
+     gap: 2px;
+     box-shadow: 0 0 11px rgba(33, 33, 33, .2)
+}

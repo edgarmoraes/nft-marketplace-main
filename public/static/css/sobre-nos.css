@@ -1,0 +1,39 @@
+.sobre{
+    margin-top: 3rem;
+    max-width: 100%;
+    margin-left: 2rem;
+}
+
+.content-video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-video iframe{
+
+    width: 55vw; 
+    height: 28.125vw;
+}
+
+.sobre-intro{
+    margin-left: 2rem;
+}
+
+.sobre-titulo{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #494866;
+}
+
+.sobre-texto{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    color: #494866;
+}
+

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+.principais_artes{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.arte_container_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.artes_titulo{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #494866;
+}
+
+.link_produto{
+    text-decoration: none;
+}
+
+.produto{
+    width: 300px;
+    height: 400px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    color: #494866;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px rgba(82, 82, 82, 0.2);
+}
+
+.produto:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    color: #2B6CB0;
+}
+
+.produto_imagem{
+    width:200px;
+    height: 250px;
+    padding: 10px;
+    background: url(../public/static/img/símbolo\ azul-1.png) no-repeat center/contain;
+}
+
+.produto_tag{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;  
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.produto_nome{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.produto_valor{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.fa_cart_shopping{
+    letter-spacing: 2px;
+}

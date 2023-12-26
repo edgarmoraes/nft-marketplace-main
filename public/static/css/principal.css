@@ -1,0 +1,361 @@
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+    min-height: 25vh;
+}
+
+.main-animation {
+    width: 42vw;
+}
+
+.main-texto {
+    width: 42vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 5vw;
+    animation-name: FadeInRight;
+    animation-duration: 1.25s;
+}
+
+.apresentacao {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #494866;
+}
+
+.apresentacao-texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    color: #494866;
+}
+
+.botoes-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-main-white {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #fafafa;
+    color: #2B6CB0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease-in-out;
+}
+
+.botao-main-white:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.botao-main {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #2B6CB0;
+    color: #fafafa;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.botao-main:hover {
+    background-color: rgba(43, 108, 176, 0.8);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.img-banner-bg {
+    z-index: 2;
+    width: 100%;
+    margin-left: 3vw;
+}
+
+.img-banner-lr {
+    z-index: 3;
+    width: 30vw;
+    position: absolute;
+    animation-name: FadeInLeft, Opacity;
+    animation-duration: 1.25s;
+    left: 5vw;
+}
+
+
+.img-banner-ud {
+    z-index: 4;
+    width: 30vw;
+    left: 15vw;
+    position: absolute;
+    animation-name: FadeInDown, Opacity;
+    animation-duration: 1.25s;
+
+}
+
+.img-banner-du {
+    z-index: 5;
+    width: 30vw;
+    position: absolute;
+    animation-duration: 1.25s;
+    animation-name: FadeInUp, Opacity;
+}
+
+
+/* Media Querys */
+
+@media screen and (min-width: 0px) {
+    .img-banner-lr {
+        top: 25vh;
+    }
+
+    .img-banner-ud {
+        top: 19vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 19vh;
+        }
+    }
+
+    .img-banner-du {
+        left: 18vw;
+        top: 25vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 25vh;
+        }
+    }
+
+    .apresentacao {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .apresentacao-texto {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .a-botao-main,
+    .a-botao-main-white {
+        width: 45%;
+        height: 35px;
+    }
+
+    .botao-main-white,
+    .botao-main {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .img-banner-lr {
+        top: 17vh;
+    }
+
+    .img-banner-ud {
+        top: 11vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 11vh;
+        }
+    }
+
+    .img-banner-du {
+        left: 18vw;
+        top: 18vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 18vh;
+        }
+    }
+
+    .botao-main-white,
+    .botao-main {
+        font-size: 0.7rem;
+    }
+
+    .a-botao-main,
+    .a-botao-main-white {
+        width: 45%;
+        height: 35px;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    .img-banner-lr {
+        top: 18vh;
+    }
+
+    .img-banner-ud {
+        top: 12vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 12vh;
+        }
+    }
+
+    .img-banner-du {
+        left: 18vw;
+        top: 20vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 20vh;
+        }
+    }
+
+    .apresentacao {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .apresentacao-texto {
+        font-size: 1.35rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .botao-main-white,
+    .botao-main {
+        font-size: 1rem;
+    }
+
+    .a-botao-main,
+    .a-botao-main-white {
+        width: 45%;
+        height: 50px;
+    }
+
+
+}
+
+@media screen and (min-width: 1025px) {
+    .img-banner-lr {
+        top: 25vh;
+    }
+
+    .img-banner-ud {
+        top: 12vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 12vh;
+        }
+    }
+
+    .img-banner-du {
+        left: 20vw;
+        top: 30vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 30vh;
+        }
+    }
+
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 12vh;
+        }
+    }
+
+}
+
+
+@keyframes FadeInLeft {
+    from {
+        left: -30vw;
+    }
+
+    to {
+        left: 5vw;
+    }
+}
+
+@keyframes FadeInRight {
+    from {
+        right: -30vw;
+    }
+
+    to {
+        right: 5vw;
+    }
+}
+
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

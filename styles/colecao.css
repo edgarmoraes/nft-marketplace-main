@@ -1,0 +1,137 @@
+.colecao-pg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-colecao{
+    width: 100%;
+    height: 200px;
+}
+
+.main-colecao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar-colecao{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.nome-colecao{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #494866;
+    margin-bottom: 1rem;
+}
+
+.criador-colecao{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #494866;
+    margin-bottom: 0.5rem;
+}
+
+.desc-colecao{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #494866;
+}
+
+.navbar-colecao{
+    margin-top: 1rem;
+    width: 50%;
+    height: 100px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.navbar-colecao-links{
+    border: solid 1px #494866;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #494866;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.navbar-colecao-links:hover{
+    background-color: #fafafa;
+}
+.botoes-colecao{
+    width:25%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+}
+
+.botoes-colecao:hover{
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
+}
+
+.links-colecao{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.produto-conta{
+    margin: 1rem 0 1rem 0;
+    width: 300px;
+    height: 400px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    color: #494866;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px rgba(82, 82, 82, 0.2);
+}
+
+.produto-conta:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    color: #2B6CB0;
+}
+
+.produto-imagem-conta{
+    width:200px;
+    height: 250px;
+    padding: 10px;
+    background: url(../img/símbolo\ azul-1.png) no-repeat center/contain;
+}
+
+.produto-tag-conta{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;  
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.produto-nome-conta{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}

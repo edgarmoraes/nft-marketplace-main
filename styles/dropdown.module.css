@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+
+.dropdown_font{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+
+
+.dropdown_menu {
+  background: red;
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown_menu li {
+  background: #2B6CB0;
+  cursor: pointer;
+}
+
+.dropdown_menu li:hover {
+  background: #2B6CB0;
+}
+
+.dropdown_menu.clicked {
+  display: none;
+}
+
+.dropdown_link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .fa_caret_down {
+    display: none;
+  }
+}

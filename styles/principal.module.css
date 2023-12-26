@@ -1,0 +1,375 @@
+.main_section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+    min-height: 25vh;
+    background-color: #2B6CB0;
+    
+    background-image: url("../public/static/img/backteste1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    width: 120rem;
+    height: 64vh;
+    position: absolute;
+    z-index: 0;
+    top: 80px;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%);
+}
+
+.main_animation {
+    width: 42vw;
+}
+
+.main_texto {
+    width: 42vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 5vw;
+    animation-name: FadeInRight;
+    animation-duration: 1.25s;
+}
+
+.apresentacao {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f1f1f1;
+}
+
+.apresentacao_texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    color: #f1f1f1;
+}
+
+.botoes_principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao_main_white {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #fafafa;
+    color: #2B6CB0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease-in-out;
+}
+
+.botao_main_white:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.botao_main {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #2B6CB0;
+    color: #fafafa;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.botao_main:hover {
+    background-color: rgba(43, 108, 176, 0.8);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.img_banner_bg {
+    z-index: 2;
+    width: 100%;
+    margin-left: 3vw;
+}
+
+.img_banner_lr {
+    z-index: 3;
+    width: 30vw;
+    position: absolute;
+    animation-name: FadeInLeft, Opacity;
+    animation-duration: 1.25s;
+    left: 5vw;
+}
+
+
+.img_banner_ud {
+    z-index: 4;
+    width: 30vw;
+    left: 15vw;
+    position: absolute;
+    animation-name: FadeInDown, Opacity;
+    animation-duration: 1.25s;
+
+}
+
+.img_banner_du {
+    z-index: 5;
+    width: 30vw;
+    position: absolute;
+    animation-duration: 1.25s;
+    animation-name: FadeInUp, Opacity;
+}
+
+/* Media Querys */
+
+@media screen and (min-width: 0px) {
+    .img_banner_lr {
+        top: 25vh;
+    }
+
+    .img_banner_ud {
+        top: 19vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 19vh;
+        }
+    }
+
+    .img_banner_du {
+        left: 18vw;
+        top: 25vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 25vh;
+        }
+    }
+
+    .apresentacao {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .apresentacao_texto {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .a_botao_main,
+    .a_botao_main_white {
+        width: 45%;
+        height: 35px;
+    }
+
+    .botao_main_white,
+    .botao_main {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .img_banner_lr {
+        top: 17vh;
+    }
+
+    .img_banner_ud {
+        top: 11vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 11vh;
+        }
+    }
+
+    .img_banner-du {
+        left: 18vw;
+        top: 18vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 18vh;
+        }
+    }
+
+    .botao_main_white,
+    .botao_main {
+        font-size: 0.7rem;
+    }
+
+    .a_botao_main,
+    .a_botao_main_white {
+        width: 45%;
+        height: 35px;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    .img_banner_lr {
+        top: 18vh;
+    }
+
+    .img_banner_ud {
+        top: 12vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 12vh;
+        }
+    }
+
+    .img_banner_du {
+        left: 18vw;
+        top: 20vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 20vh;
+        }
+    }
+
+    .apresentacao {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .apresentacao_texto {
+        font-size: 1.35rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .botao_main_white,
+    .botao_main {
+        font-size: 1rem;
+    }
+
+    .a_botao_main,
+    .a_botao_main_white {
+        width: 45%;
+        height: 50px;
+    }
+
+
+}
+
+@media screen and (min-width: 1025px) {
+    .img_banner_lr {
+        top: 25vh;
+    }
+
+    .img_banner_ud {
+        top: 12vh;
+    }
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 12vh;
+        }
+    }
+
+    .img_banner_du {
+        left: 20vw;
+        top: 30vh;
+    }
+
+    @keyframes FadeInUp {
+        from {
+            top: 75vh;
+        }
+
+        to {
+            top: 30vh;
+        }
+    }
+
+
+    @keyframes FadeInDown {
+        from {
+            top: -35vh;
+        }
+
+        to {
+            top: 12vh;
+        }
+    }
+
+}
+
+
+@keyframes FadeInLeft {
+    from {
+        left: -30vw;
+    }
+
+    to {
+        left: 5vw;
+    }
+}
+
+@keyframes FadeInRight {
+    from {
+        right: -30vw;
+    }
+
+    to {
+        right: 5vw;
+    }
+}
+
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

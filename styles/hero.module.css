@@ -1,0 +1,127 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+    min-height: 25hv;
+}
+
+.textBox {
+    width: 42vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 5vw;
+    top: 45vh;
+
+}
+
+.apresentacao {
+    font-family: 'Inter', sans-serif;
+    text-align: 2.5rem;
+    margin-bottom: 1rem;
+    color: #494866;
+}
+
+.apresentacaoTexto {
+    font-family: 'Inter', sans-serif;
+    text-align: 2.5rem;
+    margin-bottom: 1rem;
+    color: #494866;
+}
+
+.apresentacaoTexto {
+    font-family: 'Inter', sans-serif;
+    font-size: normal;
+    text-align: 1.35rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.butBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.butWhite {
+    animation-duration: 200;
+    transition-timing-function: ease-in-out;
+    width: 15vm;
+    height: 100%;
+    cursor: pointer;
+    background: #e6e6e6;
+    color: #2B6CB0;
+    margin-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+    text-align: 1em;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.butWhite :hover {
+    background-color: #c7c7c7;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    scale: 1.1;
+}
+
+.butBlue {
+    animation-duration: 200;
+    transition-timing-function: ease-in-out;
+    width: 15vm;
+    height: 100%;
+    cursor: pointer;
+    background: #2B6CB0;
+    color: #e6e6e6;
+    margin-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+    text-align: 1em;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.butBlue :hover {
+    background-color: #3e49b8;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    scale: 1.1;
+}
+
+.animationMain {
+    width: 42vm;
+
+}
+
+.bannerBg {
+    zoom: 2;
+    width: 46vw;
+    margin-left: 20px;
+    padding: 20px;
+    position: absolute;
+}
+.bannerLr {
+    zoom: 3;
+    width: 30vw;
+    left: 5vw;
+    position: absolute;
+    top: 38vh;
+}
+.bannerUd {
+    zoom: 4;
+    width: 30vw;
+    left: 15vw;
+    position: absolute;
+}
+.bannerDu {
+    zoom: 3;
+    width: 30vw;
+    left: 20vw;
+    position: absolute;
+    top: 45vh;
+}
